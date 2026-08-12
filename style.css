@@ -1,0 +1,414 @@
+/* =========================================================
+   GiiT COMPUTER LTD - MAIN STYLESHEET
+   ========================================================= */
+
+/* ---------- General Reset ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+  color: #222;
+  background: #f4f7fb;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 25px;
+}
+
+/* ---------- Headings ---------- */
+h1 {
+  color: #0b3d91;
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #0b3d91;
+  font-size: 2rem;
+  margin: 35px 0 15px;
+  border-left: 5px solid #f5a623;
+  padding-left: 12px;
+}
+
+h3 {
+  color: #555;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+p {
+  margin: 15px 0;
+}
+
+strong {
+  color: #0b3d91;
+}
+
+em {
+  color: #555;
+}
+
+/* ---------- Horizontal Lines ---------- */
+hr {
+  border: none;
+  height: 2px;
+  background: #dce3ed;
+  margin: 40px 0;
+}
+
+/* ---------- Links ---------- */
+a {
+  color: #0b3d91;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #f5a623;
+  text-decoration: underline;
+}
+
+/* ---------- Image ---------- */
+img {
+  display: block;
+  max-width: 100%;
+  width: 500px;
+  height: 250px;
+  object-fit: cover;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+small {
+  color: #666;
+}
+
+/* ---------- Lists ---------- */
+ul,
+ol {
+  margin: 15px 0 20px 30px;
+}
+
+li {
+  margin: 8px 0;
+}
+
+ul ul,
+ol ol {
+  margin-top: 5px;
+}
+
+/* ---------- Tables ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+caption {
+  font-size: 1.1rem;
+  color: #0b3d91;
+  padding: 15px;
+}
+
+th {
+  background: #0b3d91;
+  color: white;
+  padding: 14px;
+  text-align: left;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background: #f1f5fa;
+}
+
+tbody tr:hover {
+  background: #e8f0fc;
+}
+
+/* ---------- Audio ---------- */
+audio {
+  width: 100%;
+  max-width: 600px;
+  margin: 15px 0;
+}
+
+/* ---------- Video ---------- */
+video {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* ---------- Form ---------- */
+form {
+  background: white;
+  padding: 30px;
+  margin-top: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+label {
+  font-weight: 600;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  max-width: 650px;
+  padding: 12px 14px;
+  margin-top: 6px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+  transition: 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0b3d91;
+  box-shadow: 0 0 0 3px rgba(11, 61, 145, 0.12);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* ---------- Radio & Checkbox ---------- */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 7px;
+  accent-color: #0b3d91;
+}
+
+/* ---------- Range ---------- */
+input[type="range"] {
+  width: 100%;
+  max-width: 500px;
+  accent-color: #0b3d91;
+}
+
+/* ---------- File Upload ---------- */
+input[type="file"] {
+  margin-top: 8px;
+  padding: 10px;
+  border: 1px dashed #0b3d91;
+  border-radius: 7px;
+  width: 100%;
+  max-width: 650px;
+  background: #f8fafc;
+}
+
+/* ---------- Submit & Reset Buttons ---------- */
+input[type="submit"],
+input[type="reset"] {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+input[type="submit"] {
+  background: #0b3d91;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background: #082e6d;
+  transform: translateY(-2px);
+}
+
+input[type="reset"] {
+  background: #e5e7eb;
+  color: #333;
+}
+
+input[type="reset"]:hover {
+  background: #d1d5db;
+}
+
+/* ---------- Definition List ---------- */
+dl {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+dt {
+  color: #0b3d91;
+  font-size: 1.15rem;
+  margin-top: 15px;
+}
+
+dd {
+  margin: 5px 0 15px 20px;
+  color: #555;
+}
+
+/* ---------- Blockquote ---------- */
+blockquote {
+  background: white;
+  border-left: 6px solid #f5a623;
+  padding: 25px;
+  margin: 25px 0;
+  border-radius: 0 10px 10px 0;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #444;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* ---------- Code Block ---------- */
+pre {
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 25px;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-family: "Courier New", monospace;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- Address ---------- */
+address {
+  background: white;
+  padding: 20px;
+  border-left: 4px solid #0b3d91;
+  border-radius: 6px;
+  font-style: normal;
+  margin: 10px 0 25px;
+}
+
+/* ---------- Footer ---------- */
+body > p:last-child {
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 40px;
+  border-top: 2px solid #dce3ed;
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 20px 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  video {
+    width: 100%;
+  }
+
+  pre {
+    font-size: 0.8rem;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  body {
+    padding: 15px 10px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p,
+  li,
+  td,
+  th {
+    font-size: 0.9rem;
+  }
+
+  img {
+    height: auto;
+  }
+
+  form {
+    padding: 15px;
+  }
+}
